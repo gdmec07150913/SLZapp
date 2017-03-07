@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.pak_lup.slzapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/slzlogo"
+            android:id="@+id/imageView2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editTextzh"
+                android:hint="邮箱或者手机号"
+                android:textColorHint="#FBF8FB"
+                android:textColor="#FBF8FB"
+                android:background="#637B7B"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:paddingLeft="80dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:hint="密码"
+                android:paddingLeft="80dp"
+                android:textColorHint="#FBF8FB"
+                android:textColor="#FBF8FB"
+                android:background="#637B7B"
+                android:layout_below="@+id/editTextzh"
+                android:layout_marginBottom="15dp"
+                android:textSize="18sp"/>
+
+            <Button
+                android:text="登陆"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:id="@+id/button"
+                android:textColor="#FBF8FB"
+                android:background="@drawable/shape"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/editText2"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="注册新账号"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="#FBF8FB"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="使用第三方帐号登陆"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewdsf"
+            android:textColor="#FBF8FB"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="85dp" />
+    </RelativeLayout>
+
+</LinearLayout>
