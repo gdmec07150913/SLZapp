@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SLZapp</string>
+    <string name="quit_login">退出登陆</string>
 </resources>
