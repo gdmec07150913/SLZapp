@@ -1,6 +1,7 @@
 package com.example.pak_lup.slzapp;
 
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.example.pak_lup.slzapp.fragment.BlankFragment;
 import com.example.pak_lup.slzapp.fragment.indexfragment;
 import com.example.pak_lup.slzapp.fragment.minefragment;
 import com.example.pak_lup.slzapp.fragment.zhitiaofragment;
@@ -17,7 +19,7 @@ import com.example.pak_lup.slzapp.fragment.zhitiaofragment;
  * Created by Pak_Lup on 2017/3/11 0011.
  */
 
-public class index extends AppCompatActivity implements View.OnClickListener {
+public class index extends AppCompatActivity implements View.OnClickListener,BlankFragment.OnFragmentInteractionListener{
     private TextView tv3,tv4,tv5;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,13 @@ public class index extends AppCompatActivity implements View.OnClickListener {
                 getFragmentManager().beginTransaction().replace(R.id.container,new indexfragment_zhaoling()).commit();
             }
         });*/
+        initView();
     }
+
+    private void initView() {
+        getSupportFragmentManager().beginTransaction().add(R.id.container,new indexfragment()).commit();
+    }
+
     public void switchFragment(Fragment frag){
         getSupportFragmentManager().beginTransaction().replace(R.id.container,frag).commit();
     }
@@ -62,5 +70,10 @@ public class index extends AppCompatActivity implements View.OnClickListener {
                 switchFragment(new minefragment());
                 break;
         }
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

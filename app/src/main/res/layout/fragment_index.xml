@@ -38,39 +38,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_index"
+        android:background="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+    </android.support.design.widget.TabLayout>
 
-        <TextView
-            android:gravity="center"
-            android:clickable="true"
-            android:text="寻物启示"
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_index"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/anxunwu"
-            android:layout_weight="1"
-            android:textSize="16dp"
-            android:minHeight="45dp" />
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
 
-        <TextView
-            android:clickable="true"
-            android:gravity="center"
-            android:text="失物招领"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/anzhaoling"
-            android:layout_weight="1"
-            android:textSize="16dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/neirong">
-       <!--<ListView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent" />-->
     </LinearLayout>
 </LinearLayout>
