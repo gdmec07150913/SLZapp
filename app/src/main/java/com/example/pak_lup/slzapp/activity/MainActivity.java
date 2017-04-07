@@ -1,10 +1,11 @@
-package com.example.pak_lup.slzapp;
+package com.example.pak_lup.slzapp.activity;
 
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 
+import com.example.pak_lup.slzapp.R;
 import com.example.pak_lup.slzapp.fragment.BlankFragment;
 
 
