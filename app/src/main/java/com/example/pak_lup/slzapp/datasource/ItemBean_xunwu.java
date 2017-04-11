@@ -14,4 +14,28 @@ public class ItemBean_xunwu {
         this.itemTitle = itemTitle;
         this.itemContent = itemContent;
     }
+
+    public String getItemContent() {
+        return itemContent;
+    }
+
+    public void setItemContent(String itemContent) {
+        this.itemContent = itemContent;
+    }
+
+    public int getItemImageResId() {
+        return itemImageResId;
+    }
+
+    public void setItemImageResId(int itemImageResId) {
+        this.itemImageResId = itemImageResId;
+    }
+
+    public String getItemTitle() {
+        return itemTitle;
+    }
+
+    public void setItemTitle(String itemTitle) {
+        this.itemTitle = itemTitle;
+    }
 }

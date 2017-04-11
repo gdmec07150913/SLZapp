@@ -6,9 +6,12 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.pak_lup.slzapp.R;
 import com.example.pak_lup.slzapp.adapter.ViewPagetAdapter;
@@ -24,6 +27,8 @@ import java.util.List;
 public class zhitiaofragment extends Fragment {
     ViewPager viewPager;
     TabLayout tabLayout;
+    Toolbar toobar;
+    TextView tv;
 
     List<String> titleList;
     List<Fragment> fragmentList;
@@ -60,5 +65,10 @@ public class zhitiaofragment extends Fragment {
     private void findView(View v) {
         tabLayout= (TabLayout) v.findViewById(R.id.tab_zhitiao);
         viewPager= (ViewPager) v.findViewById(R.id.vp_zhitiao);
+
+        toobar= (Toolbar) v.findViewById(R.id.toolbar);
+        tv= (TextView) v.findViewById(R.id.tv_title);
+        tv.setText("小纸条");
+        toobar.setTitle("");
     }
 }

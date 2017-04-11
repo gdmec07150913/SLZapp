@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -27,9 +28,9 @@ public class indexActivity extends AppCompatActivity implements BlankFragment.On
     BottomNavigationView bottomNavigationView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getSupportActionBar().hide();
         setContentView(R.layout.index);
+
+
         bottomNavigationView= (BottomNavigationView) findViewById(R.id.bnv);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         initView();
