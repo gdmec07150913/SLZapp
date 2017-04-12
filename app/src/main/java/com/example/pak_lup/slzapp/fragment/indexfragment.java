@@ -63,7 +63,7 @@ public class indexfragment extends Fragment{
 
         ((AppCompatActivity)getActivity()).setSupportActionBar(toobar);
 
-        toobar.setNavigationIcon(R.mipmap.ic_launcher);
+        toobar.setNavigationIcon(R.drawable.dw);
         toobar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

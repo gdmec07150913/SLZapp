@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
 
         <com.example.pak_lup.slzapp.view.XCRoundImageView
             android:id="@+id/roundImageView"
@@ -15,6 +17,7 @@
             android:src="@drawable/touxiang"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true">
 
@@ -27,15 +30,69 @@
             android:id="@+id/name_xunwu"
             android:layout_toEndOf="@+id/roundImageView"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:textSize="18dp"/>
 
         <TextView
-            android:id="@+id/tv_content"
+            android:text="我有东西不见了，如图，如果找到请联系：1345879510，重酬。"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/neirong_xunwu"
+            android:layout_below="@+id/roundImageView"
+            android:layout_alignStart="@+id/roundImageView"
+            android:textSize="18dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/touxiang2"
+            android:id="@+id/image_xunwu"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/neirong_xunwu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/pb"
+            android:id="@+id/image_pb"
+            android:layout_below="@+id/image_xunwu"
+            android:layout_alignStart="@+id/neirong_xunwu"
+            android:layout_marginTop="25dp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Content"
-            android:textSize="20sp"
-            android:layout_toEndOf="@+id/name_xunwu" />
+            android:text="+20皮币"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/addpb_xunwu"
+            android:layout_alignBottom="@+id/image_pb"
+            android:layout_toEndOf="@+id/image_pb" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sc"
+            android:id="@+id/sc_xunwu"
+            android:layout_alignTop="@+id/addpb_xunwu"
+            android:layout_alignEnd="@+id/neirong_xunwu"
+            android:layout_marginEnd="70dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fx"
+            android:id="@+id/fx_xunwu"
+            android:layout_alignTop="@+id/sc_xunwu"
+            android:layout_alignEnd="@+id/neirong_xunwu"
+            android:layout_marginEnd="10dp" />
+
     </RelativeLayout>
 </LinearLayout>

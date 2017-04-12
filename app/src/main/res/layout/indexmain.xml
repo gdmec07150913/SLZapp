@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/indexmain"
     android:orientation="vertical"
@@ -10,9 +11,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <com.example.pak_lup.slzapp.view.XCRoundImageView
-            android:id="@+id/roundImageView"
+            android:id="@+id/roundImagetx"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/touxiang"
@@ -27,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/name_indexmain"
-            android:layout_toEndOf="@+id/roundImageView"
+            android:layout_toEndOf="@+id/roundImagetx"
             android:layout_marginStart="30dp"
             android:layout_marginTop="15dp"
             android:textSize="20dp"/>
@@ -35,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_message"
+            android:id="@+id/message_indexmain"
             android:text="详情信息"
             android:layout_marginStart="30dp"
             android:layout_marginTop="90dp"/>
@@ -43,13 +44,69 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:layout_below="@+id/tv_message"
-            android:layout_alignStart="@+id/tv_message"
-            android:layout_marginRight="20dp"
+            android:src="@drawable/touxiang2"
+            android:layout_below="@+id/message_indexmain"
+            android:layout_alignStart="@+id/message_indexmain"
+            android:layout_marginRight="25dp"
             android:layout_marginTop="15dp"
-            android:id="@+id/mainphoto" />
+            android:id="@+id/mainphoto_indexmain" />
 
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/pb"
+            android:id="@+id/pb_indexmain"
+            android:layout_below="@+id/mainphoto_indexmain"
+            android:layout_alignStart="@+id/mainphoto_indexmain"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+20皮币"
+            android:textSize="20dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/addpb_indexmain"
+            android:layout_alignBottom="@+id/pb_indexmain"
+            android:layout_toEndOf="@+id/pb_indexmain" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sc"
+            android:id="@+id/scimg_indexmain"
+            android:layout_alignTop="@+id/pb_indexmain"
+            android:layout_toEndOf="@+id/addpb_indexmain"
+            android:layout_marginStart="90dp" />
+
+        <TextView
+            android:text="收藏"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sc_indexmain"
+            android:layout_marginStart="90dp"
+            android:layout_alignBottom="@+id/pb_indexmain"
+            android:layout_toEndOf="@+id/addpb_indexmain" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fx"
+            android:id="@+id/fximg_indexmain"
+            android:layout_alignTop="@+id/scimg_indexmain"
+            android:layout_toEndOf="@+id/scimg_indexmain"
+            android:layout_marginStart="32dp" />
+
+        <TextView
+            android:text="分享"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fx_indexmain"
+            android:layout_marginStart="155dp"
+            android:layout_alignBottom="@+id/pb_indexmain"
+            android:layout_toEndOf="@+id/addpb_indexmain" />
     </RelativeLayout>
 
 </LinearLayout>

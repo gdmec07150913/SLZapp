@@ -19,7 +19,6 @@ public class indexMainActivity extends AppCompatActivity {
         setContentView(R.layout.indexmain);
         findView();
 
-
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -29,12 +28,22 @@ public class indexMainActivity extends AppCompatActivity {
 
 
         Bundle bundle=getIntent().getExtras();
-        int id=bundle.getInt("photo");
+        int id=bundle.getInt("touxiang");
+        String name=bundle.getString("name");
         String message=bundle.getString("message");
-        ImageView Iv=(ImageView) findViewById(R.id.roundImageView);
-        Iv.setImageResource(id);
-        TextView tv=(TextView) findViewById(R.id.tv_message);
-        tv.setText(message);
+        int main=bundle.getInt("mainphoto");
+        String pbadd=bundle.getString("pbadd");
+
+        ImageView Iv1=(ImageView) findViewById(R.id.roundImagetx);
+        Iv1.setImageResource(id);
+        TextView tv1=(TextView) findViewById(R.id.name_indexmain);
+        tv1.setText(name);
+        TextView tv2=(TextView) findViewById(R.id.message_indexmain);
+        tv2.setText(message);
+        ImageView IV2=(ImageView) findViewById(R.id.mainphoto_indexmain);
+        IV2.setImageResource(main);
+        TextView tv3=(TextView) findViewById(R.id.addpb_indexmain);
+        tv3.setText(pbadd);
 
 
 //        toolbar.setNavigationIcon();

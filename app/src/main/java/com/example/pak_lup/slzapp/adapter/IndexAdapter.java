@@ -51,9 +51,13 @@ public class IndexAdapter extends BaseAdapter {
             convertView = mInflater.inflate(R.layout.itemmessage_xunwu, null);
 
             //对viewHolder的属性进行赋值
-            viewHolder.imageView = (ImageView) convertView.findViewById(R.id.roundImageView);
-            viewHolder.title = (TextView) convertView.findViewById(R.id.name_xunwu);
-            viewHolder.content = (TextView) convertView.findViewById(R.id.tv_content);
+            viewHolder.imageViewtx = (ImageView) convertView.findViewById(R.id.roundImageView);
+            viewHolder.name = (TextView) convertView.findViewById(R.id.name_xunwu);
+            viewHolder.content = (TextView) convertView.findViewById(R.id.neirong_xunwu);
+            viewHolder.imageViewmain = (ImageView) convertView.findViewById(R.id.image_xunwu);
+            viewHolder.addpb = (TextView) convertView.findViewById(R.id.addpb_xunwu);
+
+
 
             //通过setTag将convertView与viewHolder关联
             convertView.setTag(viewHolder);
@@ -64,16 +68,21 @@ public class IndexAdapter extends BaseAdapter {
         ItemBean_xunwu bean = mList.get(position);
 
         // 设置控件的数据
-        viewHolder.imageView.setImageResource(bean.itemImageResId);
-        viewHolder.title.setText(bean.itemTitle);
+        viewHolder.imageViewtx.setImageResource(bean.itemImagetx);
+        viewHolder.name.setText(bean.itemName);
         viewHolder.content.setText(bean.itemContent);
+        viewHolder.imageViewmain.setImageResource(bean.itemImagemain);
+        viewHolder.addpb.setText(bean.itemaddpb);
+
 
         return convertView;
     }
     // ViewHolder用于缓存控件，三个属性分别对应item布局文件的三个控件
     class ViewHolder{
-        public ImageView imageView;
-        public TextView title;
+        public ImageView imageViewtx;
+        public TextView name;
         public TextView content;
+        public ImageView imageViewmain;
+        public TextView addpb;
     }
 }

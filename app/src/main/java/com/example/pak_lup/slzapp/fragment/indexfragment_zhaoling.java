@@ -41,7 +41,7 @@ public class indexfragment_zhaoling extends Fragment implements AdapterView.OnIt
             imglist.add(R.drawable.touxiang2);
         }
         for (int i = 0;i < 20; i ++){
-            itemBeanList.add(new ItemBean_xunwu(imglist.get(i), "名字" + i, "内容" + i));
+            itemBeanList.add(new ItemBean_xunwu(imglist.get(i), "名字" + i, "内容" + i,R.drawable.touxiang2,"+"+i+"皮币"));
         }
         mListView = (ListView) v.findViewById(R.id.lv_zhaoling);
         //设置ListView的数据适配器
@@ -54,8 +54,11 @@ public class indexfragment_zhaoling extends Fragment implements AdapterView.OnIt
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Log.i("lv_info", "onItemClick: "+position);
         Intent intent=new Intent(getActivity(),indexMainActivity.class);
-        intent.putExtra("photo",itemBeanList.get(position).getItemImageResId());
+        intent.putExtra("touxiang",itemBeanList.get(position).getItemImagetx());
+        intent.putExtra("name",itemBeanList.get(position).getItemName());
         intent.putExtra("message",itemBeanList.get(position).getItemContent());
+        intent.putExtra("mainphoto",itemBeanList.get(position).getItemImagemain());
+        intent.putExtra("pbadd",itemBeanList.get(position).getItemaddpb());
         startActivity(intent);
     }
 }
