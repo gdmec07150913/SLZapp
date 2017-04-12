@@ -3,16 +3,16 @@
     <item
         android:title="首页"
         android:id="@+id/menu_index"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/index"
        ></item>
     <item
         android:title="小纸条"
         android:id="@+id/menu_news"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/zhitiao"
        ></item>
     <item
         android:title="我的"
         android:id="@+id/menu_mine"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/mine"
         ></item>
 </menu>
