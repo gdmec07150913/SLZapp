@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pak_lup.slzapp.activity.userdataActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/container_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.pak_lup.slzapp.view.XCRoundImageView
+            android:id="@+id/roundImagetx"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/touxiang"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        </com.example.pak_lup.slzapp.view.XCRoundImageView>
+
+        <TextView
+            android:text="Pak_Lup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_userdata"
+            android:textSize="20dp"
+            android:layout_below="@+id/roundImagetx"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:text="广东机电职业技术学院"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/school_userdata"
+                    android:textColorHint="#FBF8FB"
+                    android:textColor="#FBF8FB"
+                    android:background="#637B7B"
+                    android:minHeight="55dp"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:text="13322899350"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tel_userdata"
+                    android:layout_below="@+id/school_userdata"
+                    android:textColorHint="#FBF8FB"
+                    android:textColor="#FBF8FB"
+                    android:background="#637B7B"
+                    android:minHeight="55dp"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:text="么么哒"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jianjie_userdata"
+                    android:layout_below="@+id/tel_userdata"
+                    android:textColorHint="#FBF8FB"
+                    android:textColor="#FBF8FB"
+                    android:background="#637B7B"
+                    android:minHeight="120dp"
+                    android:drawableLeft="@mipmap/ic_launcher"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"/>
+
+                <Button
+                    android:text="发消息"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#FBF8FB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button1_userdata"
+                    android:layout_below="@+id/jianjie_userdata"
+                    android:background="@drawable/shape"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:text="添加联系人"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#FBF8FB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button2_userdata"
+                    android:layout_below="@+id/button1_userdata"
+                    android:background="@drawable/shape"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>
