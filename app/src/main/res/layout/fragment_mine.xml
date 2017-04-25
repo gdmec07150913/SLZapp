@@ -69,7 +69,7 @@
             android:textSize="18dp"
             android:textColor="#FFFFFF"
             android:background="@drawable/shape5"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableLeft="@drawable/user"
             android:drawablePadding="-120dp"
             android:paddingLeft="120dp"/>
 
@@ -81,7 +81,7 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@drawable/shape2"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableLeft="@drawable/fabu"
             android:drawablePadding="-120dp"
             android:paddingLeft="120dp"/>
 
@@ -93,7 +93,7 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@drawable/shape3"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableLeft="@drawable/collection"
             android:drawablePadding="-120dp"
             android:paddingLeft="120dp"/>
         <Button
@@ -104,7 +104,7 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@drawable/shape4"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableLeft="@drawable/pwd"
             android:drawablePadding="-120dp"
             android:paddingLeft="120dp"/>
         <Button
@@ -115,7 +115,7 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@drawable/shape5"
-            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawableLeft="@drawable/logout"
             android:drawablePadding="-120dp"
             android:paddingLeft="120dp"/>
     </LinearLayout>
