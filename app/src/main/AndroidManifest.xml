@@ -19,7 +19,10 @@
         <activity android:name=".activity.indexMainActivity" />
         <activity android:name=".activity.userdataActivity" />
         <activity android:name=".activity.pbActivity" />
-        <activity android:name=".activity.chatActivity"></activity>
+        <activity android:name=".activity.updateuser" />
+        <activity android:name=".activity.publish" />
+        <activity android:name=".activity.upkey" />
+        <activity android:name=".activity.collect"></activity>
     </application>
 
 </manifest>

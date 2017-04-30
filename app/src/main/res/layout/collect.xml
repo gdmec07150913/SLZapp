@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.pak_lup.slzapp.view.XCRoundImageView
+            android:id="@+id/roundImagetx"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/touxiang"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+        </com.example.pak_lup.slzapp.view.XCRoundImageView>
+
+        <TextView
+            android:id="@+id/name_indexmain"
+            android:text="啊宽"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/roundImagetx"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/message_indexmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情信息"
+            android:textSize="18dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="90dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/touxiang2"
+            android:layout_below="@+id/message_indexmain"
+            android:layout_alignStart="@+id/message_indexmain"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/mainphoto_indexmain" />
+
+        <ImageView
+            android:id="@+id/scimg_indexmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sc"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/mainphoto_indexmain"
+            android:layout_marginStart="90dp" />
+
+        <TextView
+            android:id="@+id/collect"
+            android:text="已有10人收藏"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/scimg_indexmain"
+            android:layout_alignBottom="@+id/scimg_indexmain"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/fximg_indexmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fx"
+            android:layout_toEndOf="@+id/collect"
+            android:layout_alignBottom="@+id/collect"
+            android:layout_marginStart="55dp"/>
+        <!--android:layout_alignLeft="@+id/collect"-->
+    </RelativeLayout>
+</LinearLayout>
