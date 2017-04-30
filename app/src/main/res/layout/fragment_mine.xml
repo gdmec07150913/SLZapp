@@ -93,7 +93,7 @@
             android:textColor="#FFFFFF"
             android:textSize="18dp"
             android:background="@drawable/shape3"
-            android:drawableLeft="@drawable/collection"
+            android:drawableLeft="@drawable/love"
             android:drawablePadding="-120dp"
             android:paddingLeft="120dp"/>
         <Button
