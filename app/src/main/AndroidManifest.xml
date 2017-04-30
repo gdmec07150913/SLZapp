@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activity.indexMainActivity" />
         <activity android:name=".activity.userdataActivity" />
-        <activity android:name=".activity.pbActivity"></activity>
+        <activity android:name=".activity.pbActivity" />
+        <activity android:name=".activity.chatActivity"></activity>
     </application>
 
 </manifest>

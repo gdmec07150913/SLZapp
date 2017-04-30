@@ -8,13 +8,13 @@ import android.widget.TextView;
 
 import com.example.pak_lup.slzapp.R;
 
-public class pbActivity extends AppCompatActivity {
+public class chatActivity extends AppCompatActivity {
     Toolbar toobar;
     TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pb);
+        setContentView(R.layout.chat);
         findView();
 
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
@@ -28,7 +28,7 @@ public class pbActivity extends AppCompatActivity {
     private void findView() {
         toobar= (Toolbar) findViewById(R.id.toolbar);
         tv= (TextView) findViewById(R.id.tv_title);
-        tv.setText("皮币");
+        tv.setText("联系人");
         toobar.setTitle("");
     }
 
