@@ -14,6 +14,6 @@
     <string name="oldkey">旧密码</string>
     <string name="newkey">新密码</string>
     <string name="cfkey">确认密码</string>
-    <string name="enter">确认修改</string>
+    <string name="enter">保存</string>
     <string name="info">没有人会选择孤立状况的整个世界，因为人是政治生物，他的本性要求与他一起生活。</string>
 </resources>

@@ -7,4 +7,8 @@
     <color name="colorSlz">#FFF540</color>
     <color name="status">#48D1CC</color>
     <color name="white">#FFFFFF</color>
+    <!--对话框左侧按钮颜色-->
+    <color name="dialogGreen">#2BAF2B</color>
+    <!--对话框右侧按钮颜色-->
+    <color name="dialogBlue">#26C6DA</color>
 </resources>

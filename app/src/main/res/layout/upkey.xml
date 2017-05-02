@@ -7,6 +7,9 @@
     android:orientation="vertical"
     tools:context="com.example.pak_lup.slzapp.activity.upkey"
     android:background="@drawable/background">
+
+    <include layout="@layout/container_toolbar"></include>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

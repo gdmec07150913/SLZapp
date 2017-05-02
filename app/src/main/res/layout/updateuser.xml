@@ -8,6 +8,8 @@
     tools:context="com.example.pak_lup.slzapp.activity.updateuser"
     android:background="@drawable/background">
 
+    <include layout="@layout/container_toolbar"></include>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
