@@ -26,7 +26,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
@@ -34,8 +36,8 @@
             android:background="#637B7B"
             android:textColorHint="@color/white"
             android:drawableLeft="@drawable/user"
-            android:paddingTop="10dp"
             android:paddingLeft="15dp"
+            android:minHeight="55dp"
             android:layout_marginTop="10dp"
             android:hint="@string/username"
             android:textSize="20dp"
@@ -47,6 +49,7 @@
             android:orientation="horizontal"
             android:background="#637B7B"
             android:paddingTop="10dp"
+            android:minHeight="55dp"
             android:layout_marginTop="10dp"
             android:paddingLeft="80dp">
             <RadioButton
@@ -72,9 +75,9 @@
             android:layout_height="wrap_content"
             android:background="#637B7B"
             android:textColorHint="@color/white"
-            android:drawableLeft="@drawable/user"
+            android:drawableLeft="@drawable/address"
             android:layout_marginTop="10dp"
-            android:paddingTop="10dp"
+            android:minHeight="55dp"
             android:paddingLeft="15dp"
             android:hint="@string/address"
             android:textSize="20dp"
@@ -86,10 +89,10 @@
             android:layout_height="wrap_content"
             android:background="#637B7B"
             android:textColorHint="@color/white"
-            android:drawableLeft="@drawable/user"
+            android:drawableLeft="@drawable/phone"
             android:paddingLeft="15dp"
             android:layout_marginTop="10dp"
-            android:paddingTop="10dp"
+            android:minHeight="55dp"
             android:hint="@string/phone"
             android:textSize="20dp"
             android:drawablePadding="40dp"/>
@@ -99,7 +102,7 @@
             android:layout_height="wrap_content"
             android:background="#637B7B"
             android:textColorHint="@color/white"
-            android:drawableLeft="@drawable/user"
+            android:drawableLeft="@drawable/info"
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:layout_marginTop="10dp"

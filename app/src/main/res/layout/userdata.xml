@@ -44,10 +44,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp">
+                android:paddingTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
 
                 <TextView
-                    android:text="广东机电职业技术学院"
+                    android:text="@string/address"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:layout_width="match_parent"
@@ -57,12 +59,14 @@
                     android:textColor="#FBF8FB"
                     android:background="#637B7B"
                     android:minHeight="55dp"
-                    android:drawableLeft="@mipmap/ic_launcher"
-                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="40dp"
+                    android:gravity="center_vertical"
                     android:paddingLeft="10dp" />
 
                 <TextView
-                    android:text="13322899350"
+                    android:text="@string/phone"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:layout_width="match_parent"
@@ -73,12 +77,14 @@
                     android:textColor="#FBF8FB"
                     android:background="#637B7B"
                     android:minHeight="55dp"
-                    android:drawableLeft="@mipmap/ic_launcher"
-                    android:gravity="center"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="40dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="2dp"
                     android:paddingLeft="10dp"/>
 
                 <TextView
-                    android:text="么么哒"
+                    android:text="@string/info"
                     android:textSize="20dp"
                     android:textStyle="bold"
                     android:layout_width="match_parent"
@@ -89,8 +95,9 @@
                     android:textColor="#FBF8FB"
                     android:background="#637B7B"
                     android:minHeight="120dp"
-                    android:drawableLeft="@mipmap/ic_launcher"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/info"
+                    android:drawablePadding="40dp"
                     android:paddingLeft="10dp"/>
 
                 <Button

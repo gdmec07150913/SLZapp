@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp"
             android:text="@string/status1"
-            android:background="@color/status"
+            android:background="@drawable/shape"
             android:textSize="20dp"
             android:layout_below="@+id/mainphoto_indexmain"
             android:layout_alignStart="@+id/mainphoto_indexmain"
